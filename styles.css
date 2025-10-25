@@ -3,7 +3,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #EADBCC; /* фон страницы */
+  background: #EADBCC; 
   font-family: "Outfit", sans-serif;
   color: #1b1b1b;
   font-size: 16px;
@@ -12,7 +12,7 @@ html, body {
 .page {
   width: 1440px;
   margin: 0 auto;
-  padding: 40px 145px 145px 145px; /* верх, правый, низ, левый */
+  padding: 40px 145px 145px 145px; 
 }
 
 /* ---- ЛОГО ---- */
