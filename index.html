@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1440, initial-scale=1.0" />
+  <title>Goodreads макет</title>
+
+  <!-- Шрифт Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- ЛОГО -->
+    <header>
+      <img src="images/logo.png" alt="Goodreads logo" class="logo">
+    </header>
+
+    <!-- ПОИСК + КНОПКИ -->
+    <div class="top-controls">
+      <div class="search">
+        <svg class="icon" viewBox="0 0 24 24" fill="none">
+          <path d="M21 21l-4.35-4.35" stroke="#6b6b6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="11" r="6" stroke="#6b6b6b" stroke-width="1.8"/>
+        </svg>
+        <input type="text" placeholder="Название книги..." />
+      </div>
+
+      <button class="btn add">Добавить книгу</button>
+      <button class="btn filter">Фильтр
+        <svg class="icon-filter" viewBox="0 0 24 24" fill="none">
+          <path d="M6 9h12M10 15h4" stroke="#6b6b6b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <h1 class="section-title">Книги</h1>
+
+    <!-- СЕТКА КАРТОЧЕК -->
+    <div class="books-grid">
+
+      <!-- Карточки по шаблону -->
+      <article class="card">
+        <div class="cover"><img src="images/cover1.png" alt="Обложка 1"></div>
+        <div class="card-body">
+          <div class="title">Название книги</div>
+          <div class="author">Автор</div>
+          <div class="stars">
+            <span class="star"></span><span class="star"></span>
+            <span class="star"></span><span class="star"></span>
+            <span class="star empty"></span>
+          </div>
+          <div class="meta">Статус</div>
+          <div class="notes">Заметки</div>
+        </div>
+        <div class="card-actions">
+          <button class="small-btn edit">Изменить</button>
+          <button class="small-btn delete">Удалить</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover"><img src="images/cover2.png" alt="Обложка 2"></div>
+        <div class="card-body">
+          <div class="title">Название книги</div>
+          <div class="author">Автор</div>
+          <div class="stars">
+            <span class="star"></span><span class="star"></span>
+            <span class="star"></span><span class="star"></span>
+            <span class="star empty"></span>
+          </div>
+          <div class="meta">Статус</div>
+          <div class="notes">Заметки</div>
+        </div>
+        <div class="card-actions">
+          <button class="small-btn edit">Изменить</button>
+          <button class="small-btn delete">Удалить</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover"><img src="images/cover2.png" alt="Обложка 3"></div>
+        <div class="card-body">
+          <div class="title">Название книги</div>
+          <div class="author">Автор</div>
+          <div class="stars">
+            <span class="star"></span><span class="star"></span>
+            <span class="star"></span><span class="star"></span>
+            <span class="star empty"></span>
+          </div>
+          <div class="meta">Статус</div>
+          <div class="notes">Заметки</div>
+        </div>
+        <div class="card-actions">
+          <button class="small-btn edit">Изменить</button>
+          <button class="small-btn delete">Удалить</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover"><img src="images/cover1.png" alt="Обложка 4"></div>
+        <div class="card-body">
+          <div class="title">Название книги</div>
+          <div class="author">Автор</div>
+          <div class="stars">
+            <span class="star"></span><span class="star"></span>
+            <span class="star"></span><span class="star"></span>
+            <span class="star empty"></span>
+          </div>
+          <div class="meta">Статус</div>
+          <div class="notes">Заметки</div>
+        </div>
+        <div class="card-actions">
+          <button class="small-btn edit">Изменить</button>
+          <button class="small-btn delete">Удалить</button>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

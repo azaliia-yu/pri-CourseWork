@@ -1,0 +1,219 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #EADBCC; /* фон страницы */
+  font-family: "Outfit", sans-serif;
+  color: #1b1b1b;
+  font-size: 16px;
+}
+
+.page {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 40px 145px 145px 145px; /* верх, правый, низ, левый */
+}
+
+/* ---- ЛОГО ---- */
+header {
+  margin-bottom: 50px;
+  margin-left: -105px;
+}
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+/* ---- ПОИСК И КНОПКИ ---- */
+.top-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f3f0ee;
+  border-radius: 12px;
+  padding: 14px 18px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #4a4a4a;
+  width: 100%;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 28px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400; 
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  background: #fff;
+  color: #5f4330;
+}
+
+.icon-filter {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  opacity: 0.7;
+}
+
+/* ---- ЗАГОЛОВОК ---- */
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* ---- СЕТКА КАРТОЧЕК ---- */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 558px);
+  gap: 30px;
+}
+
+/* ---- КАРТОЧКА ---- */
+.card {
+  background: #EDE8D5;
+  border-radius: 16px;
+  display: flex;
+  gap: 22px;
+  padding: 26px;
+  width: 558px;
+  height: 284px;
+  position: relative;
+
+  /* усилили тень */
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08),
+    0 12px 28px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.1),
+    0 20px 40px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ---- ОБЛОЖКА ---- */
+.cover {
+  width: 168px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- ТЕКСТ ---- */
+.card-body {
+  flex: 1;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.author {
+  color: #6b6b6b;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.stars {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  background: #f6c24a;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.star.empty {
+  background: #e6e6e6;
+}
+
+.meta {
+  color: #5e5e5e;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.notes {
+  color: #4e9edb;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* ---- КНОПКИ В КАРТОЧКЕ ---- */
+.card-actions {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  display: flex;
+  gap: 12px;
+}
+
+.small-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: 100;
+  height: 30px; 
+  padding: 0;   
+}
+
+/* Изменить */
+.edit {
+  width: 82px;      
+  background: #78CDDE;
+  color: #ffffff;
+}
+
+/* Удалить */
+.delete {
+  width: 70px;      
+  background: #EE6363;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #a39b96;
+  opacity: 1;
+}  
+
